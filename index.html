@@ -13,8 +13,19 @@
       <button>Kontakti</button>
       <div class="logo">Le Humpalés<br><span>LAUKUMUIŽA EST.1824</span></div>
       <button onclick="window.location.href='galerija.html'">Kolekcija</button>
-      <button>Ielogoties</button>
-    </nav>
+        <button onclick="openLoginModal()">Ielogoties</button>
+      </nav>
+
+      <div id="loginModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Ielogoties</h2>
+          <form id="loginForm">
+            <input type="email" placeholder="Ievadiet e-pasta adresi" required>
+            <button type="submit">Iesniegt</button>
+          </form>
+        </div>
+      </div>
   </header>
 
   <main>
