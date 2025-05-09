@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedāvājumi – Le Humpalés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Le Humpalés<br><span>LAUKUMUIŽA EST.1824</span></div>
+      <button>Atpakaļ</button>
+      <button>Kolekcija</button>
+      <button>Kontakti</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Piedāvājumi</h2>
+
+    <section class="collections">
+      <div class="collection">
+        <img src="summer.jpg" alt="Vasaras kolekcija">
+        <button>Vasaras kolekcija</button>
+      </div>
+      <div class="collection">
+        <img src="spring.jpg" alt="Pavasaru kolekcija">
+        <button>Pavasaru kolekcija</button>
+      </div>
+      <div class="collection">
+        <img src="winter.jpg" alt="Ziemas kolekcija">
+        <button>Ziemas kolekcija</button>
+      </div>
+    </section>
+
+    <section class="product-grid">
+      <div class="product"><img src="blue-shirt.jpg"><p>Zils T-krekls</p></div>
+      <div class="product"><img src="shawl.jpg"><p>Šalle</p></div>
+      <div class="product"><img src="boots.jpg"><p>Ziemas zābaki</p></div>
+      <div class="product"><img src="black-shirt.jpg"><p>Melns T-krekls</p></div>
+      <div class="product"><img src="pants.jpg"><p>Bikses</p></div>
+      <div class="product"><img src="winter-coat.jpg"><p>Ziemas mētelis</p></div>
+    </section>
+
+    <div class="feedback-btn">
+      <button>Sūdzības anketa</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="socials">
+      <span>🐦</span>
+      <span>📘</span>
+      <span>📸</span>
+    </div>
+  </footer>
+</body>
+</html>
+✅ style.css (stils abām lapām)
+css
+Copy
+Edit
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f3f3f3;
+  color: #000;
+}
+
+.navbar {
+  background: #e7e7e7;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.logo span {
+  font-size: 10px;
+  display: block;
+}
+
+button {
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: white;
+  padding: 5px 12px;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-section, .collections, .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.product, .collection {
+  background: white;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 140px;
+}
+
+.product img, .collection img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.feedback-btn {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #f3f3f3;
+}
+
+.socials span {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.dot.green {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
